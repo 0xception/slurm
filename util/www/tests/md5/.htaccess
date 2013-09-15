@@ -1,0 +1,7 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+ContentDigest On
+Options Indexes
+order deny,allow
+

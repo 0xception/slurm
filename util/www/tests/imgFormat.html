@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//OMA//DTD XHTML Mobile 1.2//EN"
+ "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>Multiple Image Format Tests</title></head>
+
+<body>
+    <h2>Multiple Image Format Tests</h2>
+
+    <ul>
+        <li>PNG: <img src="../images/example.png" />
+                 <img src="../images/example.PNG" /></li>
+        <li>JPG: <img src="../images/example.jpg" />
+                 <img src="../images/example.JPG" /></li>
+        <li>GIF: <img src="../images/example.gif" />
+                 <img src="../images/example.GIF" /></li>
+    </ul>
+
+    <h2>Malformed Extensions and Parameter passing</h2>
+    <ul>
+        <li>PNG: <img src="get.php?ref=example.png" /></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+Options Indexes
+order deny,allow
+

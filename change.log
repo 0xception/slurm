@@ -1,0 +1,22 @@
+v0.0.3
+2010/12/05
+
+	- Fixed lp bug #320530: Chunks don't get concatenated correctly.
+
+	- Fixed lp bug #338137: Sample adapters may prevent host from
+	  retrieving entire adapted body.
+
+	- Fixed lp bug #362069: Properly set receivingVb when
+	  Adapter::Xaction::noteVbContentDone is called. The bug has no known
+	  effect on sample adapters but may be affecting the real adapters
+	  based on the sample ones.
+
+	- Do not call vbDiscard to stop virgin body production in Modifying
+	  Adapter. Call vbStopMaking instead.  vbDiscard is for informing the
+	  host that the adapter will never access the virgin body.
+
+
+v0.0.2
+2008/09/30
+
+	- First public release.
